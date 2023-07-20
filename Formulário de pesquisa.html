@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Formulário de Pesquisa</h1>
+            <p id="description" class="description text-center">
+                Obrigado por tirar um tempo para responder nosso questionário!
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name"> Nome</label> 
+                <input 
+                    name="name" 
+                    id="name" 
+                    class="form-control" 
+                    type="text" 
+                    placeholder="Entre com seu nome" 
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email"> Email</label> 
+                <input 
+                    name="email" 
+                    id="email" 
+                    class="form-control" 
+                    type="email" 
+                    placeholder="Entre com seu email" 
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number"> Idade</label>
+                <input 
+                    name="number" 
+                    id="number" 
+                    class="form-control" 
+                    type="number" 
+                    min="14" 
+                    max="109" 
+                    placeholder="idade"
+                />
+            </div>
+            <div class="form-group">
+                <p>Selecione a opção que melhor descreve você no momento:</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option value="" name="freecodecamp">(selecione uma opção)</option>
+                    <option value="1" name="freecodecamp">Estudante</option>
+                    <option value="2" name="freecodecamp">Trabalhador em tempo integral</option>
+                    <option value="3" name="freecodecamp">Estudante em tempo integral</option>
+                    <option value="4" name="freecodecamp">Prefiro não responder</option>
+                    <option value="5" name="freecodecamp">Outro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p> Você nos recomendaria a um amigo?</p>
+                    <label>
+                        <input 
+                            class="input-radio" 
+                            type="radio" 
+                            name="recomendacao do usuario" 
+                            value="definitivamente"
+                            checked
+                            />Definitivamente </label
+                        >
+                    <label>
+                        <input 
+                            class="input-radio" 
+                            id="talvez" 
+                            type="radio" 
+                            name="recomendacao do usuario" 
+                            value="talvez"
+                            />Talvez</label
+                        >
+                    <label
+                        ><input 
+                            class="input-radio" 
+                            type="radio" 
+                            name="recomendacao do usuario" 
+                            value="nao"
+                        />Não</label
+                    >
+            </div>    
+            
+            <div class="form-group">
+                <p>Qual caracteristica você apontaria como favorita?</p>  
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option value="" name="freecodecamp">(selecione uma opção)</option>
+                    <option value="1" name="freecodecamp">Desafios</option>
+                    <option value="2" name="freecodecamp">Projetos</option>
+                    <option value="3" name="freecodecamp">Comunidade</option>
+                    <option value="4" name="freecodecamp">Código aberto</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    O que você gostaria de ver em nossos conteúdos?
+                    <span class="clue">(Selecione todas as opções aplicáveis)</span>
+                </p>
+
+                <label
+                    ><input 
+                        name="prefer"
+                        value="projetos front-end" 
+                        type="checkbox"
+                        class="input-checkbox"
+                    /> Projetos Front-end</label
+                >
+                <label>
+                    <input 
+                        name="prefer"
+                        value="projetos back-end" 
+                        type="checkbox"
+                        class="input-checkbox"
+                    /> Projetos Back-end</label
+                >
+                <label
+                    ><input 
+                        name="prefer"
+                        value="data visualization" 
+                        type="checkbox"
+                        class="input-checkbox"
+                    /> Data Visualization</label
+                >
+                <label
+                    ><input 
+                        name="prefer"
+                        value="mais desafios" 
+                        type="checkbox"
+                        class="input-checkbox"
+                    /> Mais desafios</label
+                >
+                <label
+                    ><input 
+                        name="prefer"
+                        value="comunidade open-source" 
+                        type="checkbox"
+                        class="input-checkbox"
+                    /> Comunidade Open-source</label
+                >
+                <label
+                    ><input 
+                        name="prefer"
+                        value="salas de ajuda" 
+                        type="checkbox"
+                        class="input-checkbox"
+                    /> Salas de ajuda</label
+                >
+                <label
+                    ><input 
+                        name="prefer"
+                        value="videos" 
+                        type="checkbox"
+                        class="input-checkbox"
+                    /> Videos</label
+                >
+                <label
+                    ><input 
+                        name="prefer"
+                        value="encontros online" 
+                        type="checkbox"
+                        class="input-checkbox"
+                    /> Encontros Online</label
+                >
+                <label
+                    ><input 
+                        name="prefer"
+                        value="wiki" 
+                        type="checkbox"
+                        class="input-checkbox"
+                    /> Wiki</label
+                >
+                <label
+                    ><input 
+                        name="prefer"
+                        value="foruns" 
+                        type="checkbox"
+                        class="input-checkbox"
+                    /> Fóruns</label
+                >
+                <label
+                    ><input 
+                        name="prefer"
+                        value="conteudo adicional" 
+                        type="checkbox"
+                        class="input-checkbox"
+                    /> Conteúdo adicional</label
+                >
+            </div>
+
+            <div class="form-group">
+                <p>Comentários ou sugestões?</p>
+                <textarea 
+                    placeholder="Entre com seu comentário aqui..." 
+                    name="comment" 
+                    id="comment"
+                    class="input-textarea"
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-button" id="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+        </div>
+    </body>    
+</html>    
