@@ -3,7 +3,6 @@ package voo;
 import java.util.Scanner;
 
 public class AirlineReservationSystem {
-	//array para armazenar os assentos
     private static boolean[] seats = new boolean[10];
 
     public static void main(String[] args) {
