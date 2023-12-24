@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>Quiz</title>
+  
+  <style> 
+    body {
+        background-image: linear-gradient(to right top, #f46b45, #eea849, #e1c35c, #c5d169, #a8dd76, #8dd46e, #6dcf66, #4ec95d, #3db351, #35a84a, #309d43, #32923d);
+        font-family: Arial, sans-serif;
+        height: 100vh;
+    }
+    h1 {
+      text-align: center;
+    }
+    a {
+        text-align: center;
+        margin: center;
+        justify-content: center;
+        display: flex;
+
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .options {
+      list-style-type: none;
+      padding: 0;
+    }
+    .options li {
+      margin-bottom: 10px;
+    }
+    .submit-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .result {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Quiz</h1>
+  <div id="quiz-container">
+    <div class="question">
+      <h2>Pergunta 1: Qual é o maior mamífero do mundo?</h2>
+      <ul class="options">
+        <li><input type="radio" name="q1" value="a"> Baleia-Azul</li>
+        <li><input type="radio" name="q1" value="b"> Elefante</li>
+        <li><input type="radio" name="q1" value="c"> Hipopótamo C</li>
+      </ul>
+    </div>
+    <div class="question">
+      <h2>Pergunta 2: Qual é a capital dos Estados Unidos?</h2>
+      <ul class="options">
+        <li><input type="radio" name="q2" value="a"> Nova Iorque</li>
+        <li><input type="radio" name="q2" value="b"> Chicago</li>
+        <li><input type="radio" name="q2" value="c"> Washington</li>
+      </ul>
+    </div>
+    <div class="question">
+      <h2>Pergunta 3: Quem foi Isabel de Bragança?</h2>
+      <ul class="options">
+        <li><input type="radio" name="q3" value="a"> Princesa do Brasil</li>
+        <li><input type="radio" name="q3" value="b"> Rainha do Brasil</li>
+        <li><input type="radio" name="q3" value="c"> Duquesa do Brasil</li>
+      </ul>
+    </div>
+    <div class="question">
+      <h2>Pergunta 4: Onde está localizado a maior montanha do mundo?</h2>
+      <ul class="options">
+        <li><input type="radio" name="q4" value="a"> China</li>
+        <li><input type="radio" name="q4" value="b"> Nepal</li>
+        <li><input type="radio" name="q4" value="c"> Rússia</li>
+      </ul>
+    </div>
+    <button class="submit-btn" onclick="submitQuiz()">Enviar</button>
+  </div>
+  <div id="result-container" style="display: none;">
+    <h2 class="result">Resultado:</h2>
+    <p class="result">Perguntas acertadas: <span id="correct-answers"></span></p>
+    <p class="result">Porcentagem de acertos: <span id="percentage"></span>%</p>
+    <p class="result">Tempo: <span id="time"></span> segundos</p>
+    <a href="Quiz.html">Tentar novamente</a>
+  </div>
+  
+  <script>
+    function submitQuiz() {
+      var correctAnswers = 0;
+      var totalQuestions = 4;
+      var time = 0;
+      
+      // Verificar respostas corretas
+      if (document.querySelector('input[name="q1"]:checked').value === 'a') {
+        correctAnswers++;
+      }
+      if (document.querySelector('input[name="q2"]:checked').value === 'c') {
+        correctAnswers++;
+      }
+      if (document.querySelector('input[name="q3"]:checked').value === 'a') {
+        correctAnswers++;
+      }
+      if (document.querySelector('input[name="q4"]:checked').value === 'b') {
+        correctAnswers++;
+      }
+      
+      // Calcular porcentagem de acertos
+      var percentage = (correctAnswers / totalQuestions) * 100;
+      
+      // Calcular tempo
+      time = Math.floor((Date.now() - startTime) / 1000);
+      
+      // Exibir resultados
+      document.getElementById('correct-answers').textContent = correctAnswers;
+      document.getElementById('percentage').textContent = percentage.toFixed(2);
+      document.getElementById('time').textContent = time;
+      
+      // Esconder quiz e mostrar resultados
+      document.getElementById('quiz-container').style.display = 'none';
+      document.getElementById('result-container').style.display = 'block';
+    }
+    
+    var startTime = Date.now();
+  </script>
+
+</body>
+</html>
