@@ -1,0 +1,251 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Nunito&family=Palanquin+Dark:wght@500&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+    <title>Nike Store</title>
+    <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="./js/bootstrap.js"> </script>
+        <script src="./script.js"></script>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <h2>Nike Online Store</h2>
+            </div>
+            <div class="navBottom">
+                <h3 class="menuItem">Presentes Nike</h3>
+                <h3 class="menuItem">Lançamentos</h3>
+                <h3 class="menuItem">Masculino</h3>
+                <h3 class="menuItem">Feminino</h3>
+                <h3 class="menuItem">Infantil</h3>
+                <h3 class="menuItem">Ofertas</h3>
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Buscar..." class="searchInput">
+                    <noscript><img loading="lazy" loading="lazy" decoding="async" src=".https://cdn-icons-png.flaticon.com/512/25/25313.png" width="20" height="20" alt="" class="searchIcon"></noscript><img loading="lazy" loading="lazy" decoding="async" src='https://cdn-icons-png.flaticon.com/512/25/25313.png' data-src="https://cdn-icons-png.flaticon.com/512/25/25313.png" width="20" height="20" alt="" class=" lazy searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer">Ofertas por tempo limitado!</span>
+            </div>
+        </div>
+        
+    </nav>
+
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+
+        <!--   Bullets do carrossel, se aumentar uma imagem, aumente um li e acrescento o próximo número -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+          </ol>
+        
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h5 class="contador"> 1 / 4 <h5>
+              <img src="https://globaltenis.com.br/wp-content/uploads/2023/06/Tenis-Nike-Air-Max-Plus-TN-Preto-Branco-3.png">
+               <div class="titulo">
+                <h1 class="sliderTitle">AIR MAX ONE ESSENTIAL</h1>
+                <h2 class="sliderPrice">R$ 214,99</h2>
+                <a href="#product">
+                    <button class="buyButton">COMPRE AGORA!</button>
+                </a>
+            </div>
+        </div>
+
+            <div class="carousel-item">
+              <h5 class="contador"> 2 / 4 <h5>
+              <img src="https://globaltenis.com.br/wp-content/uploads/2023/06/Tenis-Nike-Air-Max-Plus-TN-Preto-Branco-3.png">
+              <div class="titulo">
+                <h1 class="sliderTitle">FLATFORM AZUL LARANJA</h1>
+                <h2 class="sliderPrice">R$ 175,99</h2>
+                <a href="#product">
+                    <button class="buyButton">COMPRE AGORA!</button>
+                </a>
+            </div>
+        </div>
+        
+            <div class="carousel-item">
+              <h5 class="contador"> 3 / 4 <h5>
+              <img src="https://globaltenis.com.br/wp-content/uploads/2023/06/Tenis-Nike-Air-Max-Plus-TN-Preto-Branco-3.png">
+              <div class="titulo">
+                <h1 class="sliderTitle">AIR MAX TERRASCAPE</h1>
+                <h2 class="sliderPrice">R$ 229,99</h2>
+                <a href="#product">
+                    <button class="buyButton">COMPRE AGORA!</button>
+                </a>
+            </div>
+        </div>
+
+        
+          <div class="carousel-item">
+            <h5 class="contador"> 4 / 4 <h5>
+              <img src="https://globaltenis.com.br/wp-content/uploads/2023/06/Tenis-Nike-Air-Max-Plus-TN-Preto-Branco-3.png">
+              <div class="titulo">
+                <h1 class="sliderTitle">AIR FORCE ONE</h1>
+                <h2 class="sliderPrice">R$ 179,99</h2>
+                <a href="#product">
+                    <button class="buyButton">COMPRE AGORA!</button>
+                </a>
+            </div>
+        </div>
+
+          </div> <!-- Fecha elementos dentro do carrossel -->
+          
+            <!--   Controladores | Botões -->
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"> Previous </span>
+            </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only"> Next </span>
+          </a> 
+        </div> 
+
+        
+        <!-- Fim do carrossel -->
+    
+        <div class="product" id="product">
+            <img src="https://globaltenis.com.br/wp-content/uploads/2023/06/Tenis-Nike-Air-Max-Plus-TN-Preto-Branco-3.png">
+            <div class="productDetails">
+                <h1 class="productTitle">AIR FORCE</h1>
+                <h2 class="productPrice">Rs 1999</h2>
+                <p class="productDesc">Um tênis fenomenal para praticar seu esporte preferido!</p>
+                <div class="colors">
+                    <div class="color"></div>
+                    <div class="color"></div>
+                </div>
+                <div class="sizes">
+                    <div class="size">42</div>
+                    <div class="size">43</div>
+                    <div class="size">44</div>
+                </div>
+                <button class="productButton">COMPRE AGORA!</button>
+            </div>
+            <div class="payment">
+                <h1 class="payTitle">Personal Information</h1>
+                <label>Name and Surname</label>
+                <input type="text" placeholder="John Doe" class="payInput">
+                <label>Phone Number</label>
+                <input type="text" placeholder="+1 234 5678" class="payInput">
+                <label>Address</label>
+                <input type="text" placeholder="Elton St 21 22-145" class="payInput">
+                <h1 class="payTitle">Card Information</h1>
+                <div class="cardIcons">
+                    <noscript><img decoding="async" src="./img/visa.png" width="40" alt="" class="cardIcon"></noscript><img decoding="async" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2040%20%22%3E%3C/svg%3E' data-src="./img/visa.png" width="40" alt="" class=" lazy  cardIcon">
+                    <noscript><img decoding="async" src="./img/master.png" alt="" width="40" class="cardIcon"></noscript><img decoding="async" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2040%20%22%3E%3C/svg%3E' data-src="./img/master.png" alt="" width="40" class=" lazy  cardIcon">
+                </div>
+                <input type="password" class="payInput" placeholder="Card Number">
+                <div class="cardInfo">
+                    <input type="text" placeholder="mm" class="payInput sm">
+                    <input type="text" placeholder="yyyy" class="payInput sm">
+                    <input type="text" placeholder="cvv" class="payInput sm">
+                </div>
+                <button class="payButton">Checkout!</button>
+                <span class="close">X</span>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="galleryItem">
+                <h1 class="galleryTitle">Seja Você Mesmo!</h1>
+                    <img src="https://images.pexels.com/photos/13159244/pexels-photo-13159244.jpeg">
+            </div>
+            <div class="galleryItem">
+                <h1 class="galleryTitle">É um novo dia, uma nova vida!</h1>
+                <img src="https://images.pexels.com/photos/2982100/pexels-photo-2982100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            </div>
+            <div class="galleryItem">
+                <h1 class="galleryTitle">Just Do it!</h1>
+                    <img src="https://images.pexels.com/photos/1018911/pexels-photo-1018911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            </div>
+        </div>
+        <div class="newSeason">
+            <div class="nsItem">
+                    <img src="https://images.pexels.com/photos/34514/spot-runs-start-la.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            </div>
+            <div class="nsItem">
+                <h3 class="nsTitleSm">NOVAS PEÇAS DE INVERNO</h3>
+                <h1 class="nsTitle">Nova Estação</h1>
+                <h1 class="nsTitle">Nova Coleção</h1>
+                <a href="#nav">
+                    <button class="nsButton">ESCOLHA SEU ESTILO</button>
+                </a>
+            </div>
+            <div class="nsItem">
+                <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+            </div>
+        </div>
+        <footer>
+            <div class="footerLeft">
+                <div class="footerMenu">
+                    <h1 class="fMenuTitle">Sobre nós</h1>
+                    <ul class="fList">
+                        <li class="fListItem">Empresa</li>
+                        <li class="fListItem">Contato</li>
+                        <li class="fListItem">Oportunidades</li>
+                        <li class="fListItem">Afiliadas</li>
+                        <li class="fListItem">Lojas</li>
+                    </ul>
+                </div>
+                <div class="footerMenu">
+                    <h1 class="fMenuTitle">Links Úteis</h1>
+                    <ul class="fList">
+                        <li class="fListItem">Suporte</li>
+                        <li class="fListItem">Reembolso</li>
+                        <li class="fListItem">FAQ</li>
+                        <li class="fListItem">Feedback</li>
+                        <li class="fListItem">Histórias</li>
+                    </ul>
+                </div>
+                <div class="footerMenu">
+                    <h1 class="fMenuTitle">Produtos</h1>
+                    <ul class="fList">
+                        <li class="fListItem">Air Force</li>
+                        <li class="fListItem">Air Jordan</li>
+                        <li class="fListItem">Blazer</li>
+                        <li class="fListItem">Crater</li>
+                        <li class="fListItem">Hippie</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerRight">
+                <div class="footerRightMenu">
+                    <h1 class="fMenuTitle">Se inscreva em nossa newsletter</h1>
+                    <div class="fMail">
+                        <input type="text" placeholder="seu@email.com" class="fInput">
+                        <button class="fButton">Inscreva-se!</button>
+                    </div>
+                </div>
+                <div class="footerRightMenu">
+                    <h1 class="fMenuTitle">Siga-nos nas redes sociais</h1>
+                    <div class="fIcons">
+                        <noscript><img decoding="async" src="./img/facebook.png" alt="" class="fIcon"></noscript><img decoding="async" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="./img/facebook.png" alt="" class=" lazy  fIcon">
+                        <noscript><img decoding="async" src="./img/twitter.png" alt="" class="fIcon"></noscript><img decoding="async" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="./img/twitter.png" alt="" class=" lazy  fIcon">
+                        <noscript><img decoding="async" src="./img/instagram.png" alt="" class="fIcon"></noscript><img decoding="async" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="./img/instagram.png" alt="" class=" lazy  fIcon">
+                        <noscript><img decoding="async" src="./img/whatsapp.png" alt="" class="fIcon"></noscript><img decoding="async" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="./img/whatsapp.png" alt="" class=" lazy  fIcon">
+                    </div>
+                </div>
+                <div class="footerRightMenu">
+                    <span class="copyright">João Ferreira. All rights reserved. 2024.</span>
+                </div>
+            </div>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+    
+    </html>
