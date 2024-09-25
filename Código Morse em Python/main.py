@@ -52,7 +52,7 @@ def decode_morse(morse_code):
     return text
 
 if __name__ == "__main__":
-    text = "RONEI CU DE MORSA"
+    text = "CODIGO MORSE EM PYTHON"
     morse_code = encode_morse(text)
     print(f"Text: {text}")
     print(f"Morse Code: {morse_code}")
